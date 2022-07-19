@@ -46,7 +46,7 @@ const Navbar = () => {
             </Link>
           </ul>
           {/* Hamburger Menu */}
-          <div onClick={handleNav} className="md:hidden">
+          <div onClick={handleNav} className="md:hidden cursor-pointer">
             <AiOutlineMenu size={25} />
           </div>
         </div>
