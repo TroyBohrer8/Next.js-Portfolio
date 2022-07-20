@@ -1,4 +1,7 @@
 import React from "react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 
 const Main = () => {
   return (
@@ -17,6 +20,20 @@ const Main = () => {
             modern web applications. Currently, I'm focused on building MERN
             stack applications and using Python and AWS on the back-end.
           </p>
+          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <FaLinkedinIn />
+            </div>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <FaGithub />
+            </div>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <AiOutlineMail />
+            </div>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <BsFillPersonLinesFill />
+            </div>
+          </div>
         </div>
       </div>
     </div>
