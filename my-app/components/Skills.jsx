@@ -22,6 +22,9 @@ function Skills() {
                   height="64px"
                 />
               </div>
+              <div className="flex flex-col items-center justify-center">
+                HTML
+              </div>
             </div>
           </div>
           {/* CSS */}
@@ -34,6 +37,9 @@ function Skills() {
                   width="64px"
                   height="64px"
                 />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                CSS
               </div>
             </div>
           </div>
@@ -48,6 +54,9 @@ function Skills() {
                   height="64px"
                 />
               </div>
+              <div className="flex flex-col items-center justify-center">
+                Javascript
+              </div>
             </div>
           </div>
           {/* Node */}
@@ -60,6 +69,9 @@ function Skills() {
                   width="64px"
                   height="64px"
                 />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                Node.js
               </div>
             </div>
           </div>
@@ -74,6 +86,9 @@ function Skills() {
                   height="64px"
                 />
               </div>
+              <div className="flex flex-col items-center justify-center">
+                React
+              </div>
             </div>
           </div>
           {/* AWS */}
@@ -86,6 +101,9 @@ function Skills() {
                   width="64px"
                   height="64px"
                 />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                AWS
               </div>
             </div>
           </div>
@@ -100,6 +118,9 @@ function Skills() {
                   height="64px"
                 />
               </div>
+              <div className="flex flex-col items-center justify-center">
+                Tailwind
+              </div>
             </div>
           </div>
           {/* Python */}
@@ -112,6 +133,9 @@ function Skills() {
                   width="64px"
                   height="64px"
                 />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                Python
               </div>
             </div>
           </div>
