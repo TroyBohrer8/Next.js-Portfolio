@@ -13,10 +13,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className="fixed w-full h-20 shadow-xl z-[100] bg-slate-100">
       <div className="flex justify-between items-center w-full h-full px-5 md:px-16">
         {/* Logo */}
-        
+        TB
         {/* Links */}
         <div>
           <ul className="hidden md:flex">
