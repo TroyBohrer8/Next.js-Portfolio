@@ -1,19 +1,31 @@
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import React, { useState } from "react";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true)
+      } else {
+        setShadow(false)
+      }
+    }
+    window.addEventListener('scroll', handleShadow);
+  })
+
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100] bg-slate-100">
+    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-slate-100" : "fixed w-full h-20 z-[100] bg-slate-100"}>
       <div className="flex justify-between items-center w-full h-full px-5 md:px-16">
         {/* Logo */}
         TB
@@ -23,18 +35,18 @@ const Navbar = () => {
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">About</li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">Skills</li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">
                 Projects
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">
                 Contact
               </li>
