@@ -1,7 +1,9 @@
 import React from "react";
+import Link from "next/link"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi"
 
 function Contact() {
   return (
@@ -90,9 +92,19 @@ function Contact() {
                     rows="10"
                   />
                 </div>
+                {/* Button */}
+                <button className="w-full p-4 text-gray-100 mt-4">Send Message</button>
               </form>
             </div>
           </div>
+        </div>
+        {/* Scroll to Top */}
+        <div className="flex justify-center py-12">
+          <Link href="/">
+          <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <HiOutlineChevronDoubleUp className="text-gray" size={30}/>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
