@@ -16,16 +16,22 @@ const Navbar = () => {
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
-        setShadow(true)
+        setShadow(true);
       } else {
-        setShadow(false)
+        setShadow(false);
       }
-    }
-    window.addEventListener('scroll', handleShadow);
-  })
+    };
+    window.addEventListener("scroll", handleShadow);
+  });
 
   return (
-    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-slate-100" : "fixed w-full h-20 z-[100] bg-slate-100"}>
+    <div
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100]"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-5 md:px-16">
         {/* Logo */}
         TB
@@ -33,13 +39,19 @@ const Navbar = () => {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">Home</li>
+              <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">
+                Home
+              </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">About</li>
+              <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">
+                About
+              </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">Skills</li>
+              <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">
+                Skills
+              </li>
             </Link>
             <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">
@@ -74,12 +86,10 @@ const Navbar = () => {
           <div>
             {/* Logo */}
             <div className="flex w-full items-center justify-between">
-              <Image
-                src="/../public/assets/logo.png"
-                alt="/"
-                width="87"
-                height="35"
-              />
+              <Link href="/">
+                <p>TB</p>
+              </Link>
+
               {/* Close Button */}
               <div
                 onClick={handleNav}
@@ -99,19 +109,29 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4">Home</li>
+                <li onClick={() => setNav(false)} className="py-4">
+                  Home
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4">About</li>
+              <Link href="/#about">
+                <li onClick={() => setNav(false)} className="py-4">
+                  About
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4">Skills</li>
+              <Link href="/#skills">
+                <li onClick={() => setNav(false)} className="py-4">
+                  Skills
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4">Projects</li>
+              <Link href="/#projects">
+                <li onClick={() => setNav(false)} className="py-4">
+                  Projects
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4">Contact</li>
+              <Link href="/#contact">
+                <li onClick={() => setNav(false)} className="py-4">
+                  Contact
+                </li>
               </Link>
             </ul>
             {/* Socials */}

@@ -15,7 +15,7 @@ const Projects = () => {
           <ProjectItem
             title="Random Password Generator"
             backgroundImg={randomPasswordImg}
-            projectUrl="https://troybohrer8.github.io/Random-Password-Generator/"
+            projectUrl="/project1"
           />
           {/* Project Two */}
           <ProjectItem
