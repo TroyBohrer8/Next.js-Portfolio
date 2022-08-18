@@ -10,133 +10,47 @@ function Skills() {
         </p>
         <h2>What I Know</h2>
         {/* Container */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* HTML */}
+        <div className="grid pt-6 md:grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Front End */}
           <div className="p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/html.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                HTML
-              </div>
+              <h2 className="">Front End</h2>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+                <li>React</li>
+              </ul>
             </div>
           </div>
-          {/* CSS */}
+          {/* Back End */}
           <div className="p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/css-3.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                CSS
-              </div>
+              <h2 className="">Back End</h2>
+              <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Next.js</li>
+                <li>MongoDB</li>
+                <li>Auth</li>
+                <li>Server Side Rendering</li>
+              </ul>
             </div>
           </div>
-          {/* Javascript */}
+          {/* Other */}
           <div className="p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/js.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                Javascript
-              </div>
-            </div>
-          </div>
-          {/* Node */}
-          <div className="p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/nodejs.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                Node.js
-              </div>
-            </div>
-          </div>
-          {/* React */}
-          <div className="p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/react.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                React
-              </div>
-            </div>
-          </div>
-          {/* AWS */}
-          <div className="p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/aws.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                AWS
-              </div>
-            </div>
-          </div>
-          {/* Tailwind */}
-          <div className="p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/tailwind.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                Tailwind
-              </div>
-            </div>
-          </div>
-          {/* Python */}
-          <div className="p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image
-                  src="/../public/assets/skills/python.png"
-                  alt=""
-                  width="64px"
-                  height="64px"
-                />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                Python
-              </div>
+              <h2 className="">Other</h2>
+              <ul>
+                <li>Git</li>
+                <li>Github</li>
+                <li>Visual Studio Code</li>
+                <li>NPM</li>
+                <li>Heroku</li>
+                <li>API's</li>
+              </ul>
             </div>
           </div>
         </div>
