@@ -84,7 +84,7 @@ const Navbar = () => {
           <div>
             {/* Logo */}
             <div className="flex w-full items-center justify-between">
-              <Link href="/">
+              <Link href="/" className="cursor-pointer hover:text-red-500">
                 <p>TB</p>
               </Link>
 
