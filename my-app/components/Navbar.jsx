@@ -30,29 +30,29 @@ const Navbar = () => {
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-5 md:px-16">
+      <div className="flex justify-between items-center w-full h-full px-5 md:px-16 bg-slate-100">
         {/* Logo */}
         TB
         {/* Links */}
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">
+              <li className="ml-10 text-sm uppercase hover:text-red-500">
                 Home
               </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">
+              <li className="ml-10 text-sm uppercase hover:text-red-500">
                 About
               </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">
+              <li className="ml-10 text-sm uppercase hover:text-red-500">
                 Skills
               </li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-500">
+              <li className="ml-10 text-sm uppercase hover:text-red-500">
                 Projects
               </li>
             </Link>
