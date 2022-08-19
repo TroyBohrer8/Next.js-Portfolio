@@ -20,7 +20,7 @@ const Main = () => {
           {/* Socials */}
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <Link href="https://www.linkedin.com/in/troy-bohrer">
+              <Link href="http://www.linkedin.com/in/troy-bohrer">
                 <FaLinkedinIn />
               </Link>
             </div>

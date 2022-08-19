@@ -29,21 +29,22 @@ function project1() {
         <div className="col-span-4">
           <p>Project</p>
           <h2>Overview</h2>
-          <p>blah</p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4 mr-8">Code</button>
+          <p>
+            A simple Javascript app that prompts the user for a certain password
+            criteria then outputs a random password based off the selected
+            criterias.
+          </p>
+          <Link href="https://troybohrer8.github.io/Random-Password-Generator/">
+            <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+          </Link>
+          <Link href="https://github.com/TroyBohrer8/Random-Password-Generator">
+            <button className="px-8 py-2 mt-4 mr-8">Code</button>
+          </Link>
         </div>
-        {/* Technologies Card */}
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl pt-4">
-          <div className="p-2">
-            <p className="text-center font-bold pb-2">Technologies</p>
-            <div>
-              <p className="text-gray-600 py-2 items-center">React</p>
-            </div>
-          </div>
-        </div>
+
+        {/* Back */}
         <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
+          <p className="underline cursor-pointer pt-4">Back</p>
         </Link>
       </div>
     </div>
