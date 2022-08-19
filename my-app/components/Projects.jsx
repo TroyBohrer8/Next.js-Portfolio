@@ -15,12 +15,14 @@ const Projects = () => {
           <ProjectItem
             title="Random Password Generator"
             backgroundImg={randomPasswordImg}
+            tech="HTML, CSS, Javascript"
             projectUrl="/project1"
           />
           {/* Project Two */}
           <ProjectItem
-            title="Random Password Generator"
+            title="Weather Dashboard"
             backgroundImg={randomPasswordImg}
+            tech="React.js, OpenWeather API"
             projectUrl=""
           />
           {/* Project Three */}

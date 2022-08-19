@@ -1,9 +1,7 @@
 import React from "react";
-import Link from "next/link"
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { AiOutlineMail } from "react-icons/ai";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi"
+import Link from "next/link";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 function Contact() {
   return (
@@ -31,16 +29,19 @@ function Contact() {
               <p className="uppercase pt-8">Connect With Me</p>
               <div className="flex items-center justify-between py-4">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <Link href="http://www.linkedin.com/in/troy-bohrer">
+                    <FaLinkedinIn />
+                  </Link>{" "}
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaGithub />
+                  <Link href="https://github.com/TroyBohrer8">
+                    <FaGithub />
+                  </Link>{" "}
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <BsFillPersonLinesFill />
+                  <Link href="https://www.linkedin.com/in/troy-bohrer">
+                    <FaTwitter />
+                  </Link>{" "}
                 </div>
               </div>
             </div>
@@ -93,7 +94,9 @@ function Contact() {
                   />
                 </div>
                 {/* Button */}
-                <button className="w-full p-4 text-gray-100 mt-4">Send Message</button>
+                <button className="w-full p-4 text-gray-100 mt-4">
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
@@ -101,8 +104,8 @@ function Contact() {
         {/* Scroll to Top */}
         <div className="flex justify-center py-12">
           <Link href="/">
-          <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp className="text-gray" size={30}/>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <HiOutlineChevronDoubleUp className="text-gray" size={30} />
             </div>
           </Link>
         </div>
