@@ -1,6 +1,7 @@
 import React from "react";
-import ProjectItem from "../components/ProjectItem";
+import ProjectCard from "./ProjectCard";
 import randomPasswordImg from "../public/assets/projects/RandomPassword.png";
+import spaceXCloneImg from "../public/assets/projects/spaceXClone.png";
 
 const Projects = () => {
   return (
@@ -12,27 +13,27 @@ const Projects = () => {
         <h2>What I've Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {/* Project One */}
-          <ProjectItem
+          <ProjectCard
             title="Random Password Generator"
             backgroundImg={randomPasswordImg}
             tech="HTML, CSS, Javascript"
             projectUrl="/project1"
           />
           {/* Project Two */}
-          <ProjectItem
-            title="Weather Dashboard"
-            backgroundImg={randomPasswordImg}
-            tech="React.js, OpenWeather API"
-            projectUrl=""
+          <ProjectCard
+            title="SpaceX Clone"
+            backgroundImg={spaceXCloneImg}
+            tech="HTML, CSS, Javascript"
+            projectUrl="/project2"
           />
           {/* Project Three */}
-          <ProjectItem
+          <ProjectCard
             title="Random Password Generator"
             backgroundImg={randomPasswordImg}
             projectUrl=""
           />
           {/* Project Four */}
-          <ProjectItem
+          <ProjectCard
             title="Random Password Generator"
             backgroundImg={randomPasswordImg}
             projectUrl=""
