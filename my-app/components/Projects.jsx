@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-gray-600">
+        <p className="text-xl tracking-widest uppercase text-red-500">
           Projects
         </p>
         <h2>What I've Built</h2>

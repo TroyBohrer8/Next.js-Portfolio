@@ -26,11 +26,11 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100]"
+          ? "fixed w-full h-20 shadow-xl z-[100] bg-slate-100"
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-5 md:px-16 bg-slate-100">
+      <div className="flex justify-between items-center w-full h-full px-5 md:px-16">
         {/* Logo */}
         TB
         {/* Links */}
